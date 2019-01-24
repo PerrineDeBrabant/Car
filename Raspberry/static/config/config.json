@@ -1,0 +1,26 @@
+{
+	"verbose": "False",
+	"title":"Smart Car",
+
+	"size": 1,
+	"width": 320,
+	"height": 240,
+	"channels": 3,
+
+	"required_login": "False",
+	"port": 8090,
+	"cookie":"selfdrivingcar",
+
+	"model": "/home/pi/static/config/keras_model_0.001_learning_rate_32_batch_size_Adam_optimizer_84.0_acc.model",
+	"train_data_storage": "/home/pi",
+	"pigame":"False",
+	"test":"/home/pi",
+
+	"car_config": {
+		 "FORWARD": 	{"pin":13 , "label_code":0}
+		,"RIGHT": 		{"pin": 26,  "label_code":1}
+		,"LEFT": 		{"pin": 19, "label_code":2}
+		,"BACKWARDS": 	{"pin": 16, "label_code":-1}
+		,"SPEED":	 	{"pin": 20, "default":45}
+	}
+}
